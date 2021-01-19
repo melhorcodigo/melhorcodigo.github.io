@@ -1,30 +1,27 @@
 ---
 layout: page
-title: Sobre mim
+title: Sobre
 permalink: /sobre/
 tags: [Sobre]
 ---
 
-<h2>Olá!</h2>
+<h2>Seja bem-vindo!</h2>
 
 <p>
-<img src="{{ site.baseurl }}/assets/img/rg.jpg" width="60%" class="right" style="border-radius: 30%">
-Sou <b>Ricardo Godoy</b>, analista desenvolvedor fascinado pelo universo de tecnologia, música e shows de mágica.
+<img src="{{ site.baseurl }}/assets/img/rg.png" width="60%" class="right">
+Aqui no <b>Melhor Código</b> você encontra conteúdos para te fazer evoluir no desenvolvimento de software e te levar para o próximo nível!
 </p>
 
-Iniciado em computadores desde cedo através de jogos e sempre com aquela curiosidade de <b>"como será que foi feito?"</b>, comecei a aprender programação e desenvolver joguinhos em C++ aos 14 anos.
-
-Decidido de que encontrei o que amava, segui para um curso técnico na área, seguido de graduação em Sistemas de Informação e intercâmbio nos Estados Unidos.
-
-Gosto de bom código, limpo e simples. Desenvolver é um eterno aprendizado e nada melhor do que compartilhar conhecimento, discutir soluções e metodologias. 
-
-<b>Por isso estou escrevendo esse blog!</b>
-
-<!--Atualmente atuo como <i>Customer Solutions Engineer</i> no <b>[Google](https://google.com)</b> sempre buscando inovação e desafios!-->
-
-Visite meus projetos, perfil ou me mande um e-mail!
-
-<b>Até logo,
+<b>Iniciando em programação e desenvolvimento?</b>
 <br/>
-Ricardo Godoy
-</b>
+Sem problema! Se liga nos conteúdos para iniciantes.
+
+<b>Querendo ir além?</b>
+<br/>
+Confira os conteúdos avançados e se desenvolva profissionalmente.
+
+<p>
+Não deixe de comentar e conferir nosso GitHub com código-fonte dos posts!
+</p> 
+
+<b>Vamos juntos escrever um melhor código!</b>
