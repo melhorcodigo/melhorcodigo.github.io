@@ -46,7 +46,7 @@ theme_settings:
 
   # Scripts / Features 
   google_analytics: "G-NCXGY3DVH9" 
-  disqus_shortname: "https-melhorcodigo-github-io.disqus.com"
+  disqus_shortname: "https-melhorcodigo-github-io"
   katex: true # Enable if using math markup
   portfolio: true
   search: true
