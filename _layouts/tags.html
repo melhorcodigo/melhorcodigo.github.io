@@ -5,7 +5,6 @@ layout: page
 <div class="home">
 
 <!-- cycles through posts to get tags -->
-{% assign rawtags = "" %}
 {% for post in site.posts %}
 {% assign post_tags = post.tags | join:'|' | append:'|' %}
 {% assign rawtags = rawtags | append:post_tags %}
@@ -20,7 +19,7 @@ layout: page
 
 <!-- cycles through pages to get tags -->
 {% for page in site.pages %}
-{% assign page_tags = page.tags | join:'|'  %}
+{% assign page_tags = page.tags | join:'|' | append:'|' %}
 {% assign rawtags = rawtags | append:page_tags %}
 {% endfor %}    
     

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Sobre
+order: 3
 permalink: /sobre/
 tags: [Sobre]
 ---
