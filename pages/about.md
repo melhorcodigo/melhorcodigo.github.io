@@ -3,7 +3,7 @@ layout: page
 title: Sobre
 order: 3
 permalink: /sobre/
-tags: [Sobre]
+tags: [sobre]
 ---
 
 <h2>Seja bem-vindo!</h2>

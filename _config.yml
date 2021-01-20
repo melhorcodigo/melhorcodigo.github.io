@@ -26,7 +26,7 @@ theme_settings:
   behance:
   bitbucket:
   dribbble:
-  facebook:
+  facebook: omelhorcodigo
   flickr:
   gitlab:
   github: "melhorcodigo"
@@ -42,13 +42,13 @@ theme_settings:
   twitter:
   vimeo:
   wordpress:
-  youtube:
+  youtube: UCBkF1wFgY0KYaIfHAc4NY9g
 
   # Scripts / Features 
   google_analytics: "G-NCXGY3DVH9" 
   disqus_shortname: "https-melhorcodigo-github-io"
   katex: true # Enable if using math markup
-  portfolio: true
+  portfolio: false
   search: true
   tags: true
   

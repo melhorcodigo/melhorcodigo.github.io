@@ -5,6 +5,8 @@ layout: page
 <div class="home">
 
 <!-- cycles through posts to get tags -->
+{% assign rawtags = "" %}
+
 {% for post in site.posts %}
 {% assign post_tags = post.tags | join:'|' | append:'|' %}
 {% assign rawtags = rawtags | append:post_tags %}
@@ -18,9 +20,10 @@ layout: page
 {% endfor %}
 
 <!-- cycles through pages to get tags -->
-{% for page in site.pages %}
-{% assign page_tags = page.tags | join:'|' | append:'|' %}
-{% assign rawtags = rawtags | append:page_tags %}
+{% assign pages = site.pages | where_exp: "item", "item.tags" %}
+{% for page in pages %}
+    {% assign page_tags = page.tags | join:'|' | append:'|' %}
+    {% assign rawtags = rawtags | append:page_tags %}
 {% endfor %}    
     
 <!-- Displays the list of tags-->
@@ -29,10 +32,10 @@ layout: page
     <!-- Displays the posts and pages that contains the tag-->
     <div class="posts">
         {% for tag in tags %}
+
         <h3 id="{{ tag | cgi_escape }}" class="tag-anchor">
             <a href="#{{ tag | cgi_escape }}"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a>
             <a href="#{{ page.title }}" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
-
         </h3>
 
         <!-- Posts and collection for each tags -->
@@ -69,22 +72,6 @@ layout: page
                 </h5>
                 {% endif %} 
             {% endfor %} 
-            
-            <!-- Portfolio -->
-            {% for note in site.portfolio %} 
-                {% if note.tags contains tag %}
-                <h5 class="tag-title">
-                    <a href="{{ site.baseurl }}{{ note.url }}">
-                        <i class="fa fa-file-o" aria-hidden="true"></i>
-                        {{ note.title }}
-                    </a>
-                
-                    <div class="meta">
-                        {{ note.date | date: "%B %-d, %Y" }}
-                    </div>
-                </h5>
-                {% endif %} 
-            {% endfor %}
 
         </div>
         {% endfor %}
