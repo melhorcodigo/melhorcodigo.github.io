@@ -79,6 +79,10 @@
     }
 }
 
+.page-link {
+    border-bottom: 2px solid #587ab0;
+}
+
 /* ---- Responsive ---- */
 
 @media (min-width: $break) {
@@ -87,7 +91,7 @@
     }
 }
 
-@media (max-width: $break) {
+@media (max-width: calc(#{$break} + 250px)) {
     .site-header {
         img.avatar {
             margin-top: -7px
